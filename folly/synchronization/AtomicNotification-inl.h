@@ -118,7 +118,6 @@ void atomic_notify_all_impl(const Atom<Integer, Args...>* atomic) {
   });
 }
 
-
 template <typename Integer>
 void tag_invoke(
     atomic_wait_fn, const std::atomic<Integer>* atomic, Integer expected) {

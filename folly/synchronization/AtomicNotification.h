@@ -59,7 +59,7 @@ struct atomic_wait_fn {
 constexpr inline auto atomic_wait =
     detail::atomic_notification::atomic_wait_fn{};
 
-// mimic: std::atomic_wait_until, p1135r0
+//  mimic: std::atomic_wait_until, p1135r0
 namespace detail {
 namespace atomic_notification {
 struct atomic_wait_until_fn {
