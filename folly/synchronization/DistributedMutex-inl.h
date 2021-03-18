@@ -1678,7 +1678,7 @@ auto timedLock(Atomic& state, Deadline deadline, MakeProxy proxy) {
 
     // wait on the futex until signalled, if we get a timeout, the try_lock
     // fails
-    auto result = auto result = folly::atomic_wait_until( // evade ADL
+    auto result = folly::atomic_wait_until( // evade ADL
         &state,
         previous | data,
         deadline);
